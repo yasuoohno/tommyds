@@ -7,7 +7,7 @@
 #   TOMMYDS_LIBRARIES - the libraries to link against
 
 find_path(TOMMYDS_INCLUDE_DIR
-    NAMES tommyds/tommyds.h
+    NAMES tommyds/tommy.h
 )
 
 find_library(TOMMYDS_LIBRARY
@@ -16,10 +16,11 @@ find_library(TOMMYDS_LIBRARY
 
 # Handle the QUIETLY and REQUIRED arguments and set TOMMYDS_FOUND to TRUE if all components are found
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(TOMMYDS
+
+find_package_handle_standard_args(tommyds
     REQUIRED_VARS TOMMYDS_INCLUDE_DIR TOMMYDS_LIBRARY)
 
-if(TOMMYDS_FOUND)
+if(tommyds_FOUND)
     set(TOMMYDS_LIBRARIES ${TOMMYDS_LIBRARY})
     set(TOMMYDS_INCLUDE_DIRS ${TOMMYDS_INCLUDE_DIR})
 
