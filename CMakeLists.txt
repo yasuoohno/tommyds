@@ -13,4 +13,4 @@ target_include_directories(tommyds PRIVATE tommyds)
 
 install(TARGETS tommyds)
 install(FILES ${TommyDS_HDR} DESTINATION include/tommyds)
-install(FILES FindTommyDS.cmake DESTINATION share/tommyds)
+install(FILES TommyDSConfig.cmake DESTINATION share/TommyDS)
