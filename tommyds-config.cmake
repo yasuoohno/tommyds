@@ -1,4 +1,4 @@
-# FindTommyDS.cmake
+# tommyds-config.cmake
 
 # Locate the TommyDS library
 # This module defines the following variables:
