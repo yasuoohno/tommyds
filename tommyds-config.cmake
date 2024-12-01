@@ -24,9 +24,9 @@ if(TOMMYDS_FOUND)
     set(TOMMYDS_INCLUDE_DIRS ${TOMMYDS_INCLUDE_DIR})
 
     # Define the TommyDS::tommyds library target if not already defined
-    if(NOT TARGET TommyDS::tommyds)
-        add_library(TommyDS::tommyds UNKNOWN IMPORTED)
-        set_target_properties(TommyDS::tommyds
+    if(NOT TARGET tommyds::tommyds)
+        add_library(tommyds::tommyds UNKNOWN IMPORTED)
+        set_target_properties(tommyds::tommyds
             PROPERTIES IMPORTED_LOCATION ${TOMMYDS_LIBRARY}
             INTERFACE_INCLUDE_DIRECTORIES ${TOMMYDS_INCLUDE_DIR}
     )
