@@ -49,3 +49,14 @@ benchmark/exec/
 www/
 
 
+
+# vcpkg build artifacts
+vcpkg_installed/
+
+# Visual Studio project files
+*.sln
+*.vcxproj
+
+# Compiled libraries
+*.lib
+*.a
