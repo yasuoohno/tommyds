@@ -1,0 +1,4 @@
+tommyds provides CMake targets:
+
+find_package(tommyds CONFIG REQUIRED)
+target_link_libraries(main PRIVATE tommyds::tommyds)
